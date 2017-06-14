@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:dialogTheme">@style/AppDialogTheme</item>
+        <item name="android:datePickerStyle">@style/AppTheme.DatePicker</item>
+        <item name="android:timePickerStyle">@style/AppTheme.TimePicker</item>
+
+    </style>
+
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:datePickerStyle">@style/AppTheme.DatePicker</item>
+        <item name="android:timePickerStyle">@style/AppTheme.TimePicker</item>
+
+    </style>
+
+    <style name="AppTheme.DatePicker" parent="android:Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+
+    </style>
+
+
+    <style name="AppTheme.TimePicker" parent="android:Widget.Material.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+
+    </style>
+
+    <!-- Dark Buttons -->
+    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="textFont">sans-serif</style>
+
+    <style name="textSizeSmall">18sp</style>
+
+    <style name="bigger_text">
+        <item name="android:listPreferredItemHeightSmall">40dp</item>
+        <item name="android:textSize">20sp</item> <!--item text size-->
+    </style>
+
+    <style name="MainAppTheme" parent="AppDialogTheme" />
+
+
+</resources>

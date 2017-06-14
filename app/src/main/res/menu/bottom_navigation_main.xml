@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/map_pin"
+        android:enabled="true"
+        android:icon="@drawable/ic_pin_drop_black_24dp"
+        android:title="Maps"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/megaphone"
+        android:enabled="true"
+        android:icon="@drawable/megaphone"
+        android:title="Trending"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="Create"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/music_social_group"
+        android:enabled="true"
+        android:icon="@drawable/ic_group_black_24dp"
+        android:title="Friends"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/identity_card"
+        android:enabled="true"
+        android:icon="@drawable/ic_recent_actors_black_24dp"
+        android:title="Profile"
+        app:showAsAction="always" />
+</menu>

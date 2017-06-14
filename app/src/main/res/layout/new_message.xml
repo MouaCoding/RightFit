@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/send_button"
+        android:id="@+id/newMessageHeader">
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+            android:id="@+id/back_button1"
+            android:layout_weight="4.70"
+            android:background="@android:color/transparent"
+            android:layout_gravity="left|center_vertical"
+            android:padding="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" />
+        <TextView
+            android:text="@string/new_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <Button
+            android:text="@string/send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/to_text"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:textSize="24sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/send_to"
+            android:ems="10"
+            android:id="@+id/send_to_handle"
+            android:visibility="gone"
+            android:layout_weight="1" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:background="@drawable/rect_edittext"
+            android:hint="@string/filterByHandle"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textPersonName"
+        android:hint="@string/new_message_content"
+        android:ems="10"
+        android:id="@+id/new_message_content"
+        android:gravity = "top" />
+
+</LinearLayout>

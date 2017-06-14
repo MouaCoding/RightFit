@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ChatActivity">
+
+    <!--<ImageButton-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:srcCompat="@drawable/ic_arrow_back_black_24dp"-->
+        <!--android:id="@+id/back_button"-->
+        <!--android:layout_weight="4.70"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:layout_gravity="left|center_vertical"-->
+        <!--android:padding="8dp"-->
+        <!--android:layout_marginLeft="4dp"-->
+        <!--android:layout_marginRight="4dp" />-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/menu"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_gravity="left|center_vertical"-->
+        <!--android:layout_marginLeft="4dp"-->
+        <!--android:layout_marginRight="4dp"-->
+        <!--android:layout_weight="4.70"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:padding="8dp"-->
+        <!--app:srcCompat="@drawable/ic_menu_black_24dp" />-->
+
+    <include layout="@layout/messaging_bar_red"
+        android:id="@+id/include"></include>
+
+    <EditText
+        android:id="@+id/search_friends"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rect_edittext"
+        android:hint="@string/search_friends"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+
+    <ListView
+        android:id="@+id/message_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_friends"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:divider="@null" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/create_new_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="53dp"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        app:backgroundTint="@color/MainRed"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="52dp" />
+
+
+
+</RelativeLayout>

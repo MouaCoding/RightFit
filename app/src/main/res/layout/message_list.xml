@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ChatActivity">
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+        android:id="@+id/back_button"
+        android:layout_weight="4.70"
+        android:background="@android:color/transparent"
+        android:layout_gravity="left|center_vertical"
+        android:padding="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp" />
+
+    <EditText
+        android:id="@+id/search_friends"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rect_edittext"
+        android:hint="@string/search_friends"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+
+    <ListView
+        android:id ="@+id/message_list_view"
+        android:layout_weight="100"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginLeft="100dp">
+
+
+        <!-- Clickable imageview = imagebutton (: -->
+        <ImageView
+            android:id="@+id/create_new_message"
+            android:layout_width="38dp"
+            android:layout_height="36dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/add_filled_cross_sign" />
+
+        <TextView
+            android:id="@+id/add_new_message"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="@string/new_message"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

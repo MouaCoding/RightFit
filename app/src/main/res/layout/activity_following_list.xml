@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.matt.RightFit.FollowingListActivity">
+
+    <include
+        layout="@layout/messaging_bar"
+        android:id="@+id/following_bar" />
+    <EditText
+        android:id="@+id/search_followers"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/blue_border"
+        android:hint="@string/search_friends"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/following_list">
+    </ListView>
+
+
+</LinearLayout>

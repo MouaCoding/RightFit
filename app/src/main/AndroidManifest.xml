@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.matt.RightFit">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Facebook permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Write Files -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.example.matt.RightFit.App"
+        android:allowBackup="true"
+        android:icon="@drawable/rightfitlogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.matt.RightFit.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.example.matt.RightFit.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.matt.RightFit.RegisterActivity" />
+        <activity android:name="com.example.matt.RightFit.ChatActivity" />
+        <activity android:name="com.example.matt.RightFit.MessageListActivity" />
+        <activity android:name="com.example.matt.RightFit.NewMessageActivity" />
+        <activity android:name="com.example.matt.RightFit.AboutMeActivity" />
+        <activity android:name="com.example.matt.RightFit.ViewUserActivity" />
+        <activity android:name="com.example.matt.RightFit.WallActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="134cf1747263e127c412def9f67626d8c3389c82" />
+
+        <activity android:name="com.example.matt.RightFit.ForgotPasswordActivity" />
+        <activity android:name="com.example.matt.RightFit.AlmostDoneActivity" />
+        <activity android:name="com.example.matt.RightFit.ViewPostActivity" />
+        <activity android:name="com.example.matt.RightFit.CityEventsActivity" />
+        <activity android:name="com.example.matt.RightFit.ViewEventActivity" />
+        <activity android:name="com.example.matt.RightFit.CommentsListActivity" />
+
+
+        <service
+            android:name="com.example.matt.RightFit.notifications.RHRNMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.example.matt.RightFit.notifications.RHRNInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.example.matt.RightFit.FilterCityActivity"
+            android:label="@string/title_activity_filter_city"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.example.matt.RightFit.MorePostsActivity" />
+        <activity android:name="com.example.matt.RightFit.MoreEventsActivity" />
+        <activity android:name="com.example.matt.RightFit.MoreSharedPostsActivity"/>
+        <activity android:name="com.example.matt.RightFit.MoreSharedEventsActivity"/>
+        <activity android:name="com.example.matt.RightFit.FollowingListActivity" />
+        <activity android:name="com.example.matt.RightFit.FollowerListActivity"></activity>
+    </application>
+
+</manifest>

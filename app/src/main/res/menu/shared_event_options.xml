@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/Unshare_Event"
+        android:title="@string/UnshareEvent"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/Report_Shared_Event"
+        android:title="@string/ReportEvent"
+        />
+
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.matt.RightFit.MainActivity">
+
+    <com.example.matt.RightFit.custom.view.NonScrollingViewPager
+        android:id="@+id/main_content_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.example.matt.RightFit.custom.view.NonScrollingViewPager>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/main_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemBackground="@drawable/navigation_bar_color"
+        app:itemIconTint="@color/colorAccent"
+        app:itemTextColor="@color/colorAccent"
+        app:menu="@menu/bottom_navigation_main" />
+
+</LinearLayout>

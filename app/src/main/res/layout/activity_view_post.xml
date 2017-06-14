@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/top_nav_color"
+    android:orientation="vertical"
+    tools:context="com.example.matt.RightFit.ViewPostActivity">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Optional if user posted an image, it should display at the top-->
+            <ImageView
+                android:id="@+id/view_user_postimage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/ic_media_route_connecting_00_light"
+                android:visibility="gone" />
+
+            <requestFocus />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/event_description" />
+
+            <TextView
+                android:id="@+id/view_post_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Content"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/view_post_user"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/view_user_displayname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:text="username"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/view_user_handle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="handle"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/user_post_like_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="4dp"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="16dp"
+                        app:srcCompat="@drawable/ic_heart" />
+
+                    <TextView
+                        android:id="@+id/user_post_like_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/listDivider" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/user_post_comment_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="4dp"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="16dp"
+                        app:srcCompat="@drawable/ic_comment_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/user_post_comment_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/user_post_share_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="4dp"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="16dp"
+                        app:srcCompat="@drawable/ic_share_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/user_post_share_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/post_location_map_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="8dp"
+                android:layout_weight="0.6" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/view_comments"
+                android:text="@string/comments_section" />
+
+            <!--<ListView-->
+            <!--android:id="@+id/view_post_comment_list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="15dp" />-->
+            <ListView
+                android:id="@+id/view_post_comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/create_post_layout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/top_create_post">
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Photo"
+        android:layout_marginTop="15dp"
+        android:id="@+id/post_upload_image_text"
+        android:visibility="visible"
+        android:layout_centerInParent="true"/>
+
+        <ImageButton
+            android:id="@+id/post_upload_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@id/post_upload_image_text"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="11dp"
+            android:visibility="visible"
+            android:src="@drawable/ic_camera_alt_black_24dp" />
+
+        <ImageView
+            android:id="@+id/post_image"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+        <EditText
+        android:id="@+id/content_post"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="8dp"
+        android:layout_weight="0.4"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/post_content_text"
+        android:inputType="textPersonName" />
+
+    <com.example.matt.RightFit.custom.view.ScrollInterceptingMapView
+        android:id="@+id/post_location_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="8dp"
+        android:layout_weight="0.6" />
+
+        <Button
+            android:id="@+id/confirm_post_button"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.74"
+            android:background="@drawable/button_with_border"
+            android:text="@string/post_button" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

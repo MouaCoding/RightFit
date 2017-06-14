@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="badwords">
+        <item>anal</item>
+        <item>anus</item>
+        <item>arse</item>
+        <item>ass</item>
+        <item>ballsack</item>
+        <item>balls</item>
+        <item>bastard</item>
+        <item>bitch</item>
+        <item>biatch</item>
+        <item>bloody</item>
+        <item>blowjob</item>
+        <item>blow job</item>
+        <item>bollock</item>
+        <item>bollok</item>
+        <item>boner</item>
+        <item>boob</item>
+        <item>bugger</item>
+        <item>bum</item>
+        <item>butt</item>
+        <item>buttplug</item>
+        <item>clitoris</item>
+        <item>cock</item>
+        <item>coon</item>
+        <item>crap</item>
+        <item>cunt</item>
+        <item>damn</item>
+        <item>dick</item>
+        <item>dildo</item>
+        <item>dyke</item>
+        <item>fag</item>
+        <item>feck</item>
+        <item>fellate</item>
+        <item>fellatio</item>
+        <item>felching</item>
+        <item>fuck</item>
+        <item>f u c k</item>
+        <item>fudgepacker</item>
+        <item>fudge packer</item>
+        <item>flange</item>
+        <item>Goddamn</item>
+        <item>God damn</item>
+        <item>hell</item>
+        <item>homo</item>
+        <item>jerk</item>
+        <item>jizz</item>
+        <item>knobend</item>
+        <item>knob end</item>
+        <item>labia</item>
+        <item>lmao</item>
+        <item>lmfao</item>
+        <item>muff</item>
+        <item>nigger</item>
+        <item>nigga</item>
+        <item>omg</item>
+        <item>penis</item>
+        <item>piss</item>
+        <item>poop</item>
+        <item>prick</item>
+        <item>pube</item>
+        <item>pussy</item>
+        <item>queer</item>
+        <item>scrotum</item>
+        <item>sex</item>
+        <item>shit</item>
+        <item>s hit</item>
+        <item>sh1t</item>
+        <item>slut</item>
+        <item>smegma</item>
+        <item>spunk</item>
+        <item>tit</item>
+        <item>tosser</item>
+        <item>turd</item>
+        <item>twat</item>
+        <item>vagina</item>
+        <item>wank</item>
+        <item>whore</item>
+        <item>wtf</item>
+    </string-array>
+</resources>

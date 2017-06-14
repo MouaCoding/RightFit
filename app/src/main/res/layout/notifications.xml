@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="42sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <Button
+            android:text="Friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textSize="24sp" />
+
+        <Button
+            android:text="You"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textSize="24sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+        android:id="@+id/profile_app_bar_back_button"
+        android:layout_weight="0"
+        android:background="@android:color/transparent"
+        android:layout_gravity="left|center_vertical"
+        android:padding="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_app_bar_text"
+        tools:text="Me"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:layout_gravity="center" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/post_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@mipmap/post" />
+
+
+</LinearLayout>

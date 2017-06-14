@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "458658562858",
+    "firebase_url": "https://righthererightnow-72e20.firebaseio.com",
+    "project_id": "righthererightnow-72e20",
+    "storage_bucket": "righthererightnow-72e20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458658562858:android:8ef969ab26300074",
+        "android_client_info": {
+          "package_name": "com.example.matt.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458658562858-f1jfh756j7fif7u3f8t9s8idjcs5u96o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfMwdL6VhtmVFWIyDbBxw8lHNZRM3GS6E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458658562858-f1jfh756j7fif7u3f8t9s8idjcs5u96o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

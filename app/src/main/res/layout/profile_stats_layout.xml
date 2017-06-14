@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Followers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_followers_label"
+            android:textAppearance="@android:style/TextAppearance.Material.Body2"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="2dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_followers_value"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Following"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_following"
+            android:textAppearance="@android:style/TextAppearance.Material.Body2"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="2dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_number_following"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Likes Received"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_likes_received_label"
+            android:textAppearance="@android:style/TextAppearance.Material.Body2"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="2dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_karma_value"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="2dp" />
+    </LinearLayout>
+</LinearLayout>

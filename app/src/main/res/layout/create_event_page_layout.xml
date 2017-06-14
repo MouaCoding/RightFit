@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/create_event_layout">
+
+    <!--This is for the back button for mapsOnLongClick -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp">
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/create_event_scrollview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/event_choose_theme"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignStart="@+id/editStartTime"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="11dp"
+                android:visibility="invisible"
+                android:src="@drawable/picture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose a Theme      or"
+                android:layout_marginTop="15dp"
+                android:id="@+id/event_choose_theme_text"
+                android:visibility="invisible"
+                android:layout_toRightOf="@id/event_choose_theme"/>
+
+            <ImageButton
+                android:id="@+id/event_upload_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignStart="@+id/event_name"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="11dp"
+                android:src="@drawable/ic_camera_alt_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Photo"
+                android:layout_marginTop="15dp"
+                android:id="@+id/event_upload_image_text"
+                android:layout_toRightOf="@id/event_upload_image"/>
+
+            <TextView
+                android:id="@+id/event_sd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/event_n"
+                android:layout_below="@+id/event_name"
+                android:layout_marginTop="30dp"
+                android:text="@string/event_start_date"
+                android:textColor="@color/colorTextDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/event_st"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/event_sd"
+                android:layout_below="@+id/event_sd"
+                android:layout_marginTop="40dp"
+                android:text="@string/event_start_time"
+                android:textColor="@color/colorTextDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/event_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/event_st"
+                android:layout_alignBottom="@+id/event_st"
+                android:layout_marginStart="90dp"
+                android:layout_toStartOf="@+id/event_isPrivate"
+                android:text="@string/event_end_time"
+                android:textColor="@color/colorTextDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/event_ed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/event_st"
+                android:layout_alignEnd="@+id/editEndDate"
+                android:layout_alignStart="@+id/event_et"
+                android:text="@string/event_end_date"
+                android:textColor="@color/colorTextDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/event_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editStartTime"
+                android:layout_below="@+id/filter"
+                android:layout_marginTop="32dp"
+                android:text="@string/event_address"
+                android:textColor="@color/colorTextDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/event_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/event_addr"
+                android:layout_below="@+id/editStartTime"
+                android:layout_marginTop="16dp"
+                android:text="@string/event_private"
+                android:textColor="@color/colorTextDark"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/event_isPrivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/event_private"
+                android:layout_alignBottom="@+id/editEndTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="51dp"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/event_private"
+                android:layout_below="@+id/event_private"
+                android:layout_marginTop="25dp"
+                android:text="@string/event_type"
+                android:textColor="@color/colorTextDark"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/filter_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/filter"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/event_isPrivate"
+                android:layout_marginEnd="13dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/choose_filter" />
+
+            <TextView
+                android:id="@+id/event_n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46dp"
+                android:text="@string/event_name"
+                android:textColor="@color/colorTextDark"
+                android:textSize="18sp"
+                android:layout_below="@+id/event_choose_theme"
+                android:layout_toStartOf="@+id/event_et" />
+
+            <TextView
+                android:id="@+id/event_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/event_addr"
+                android:layout_below="@+id/event_addr"
+                android:layout_marginTop="25dp"
+                android:text="@string/event_location"
+                android:textColor="@color/colorTextDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/event_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/event_sd"
+                android:layout_below="@+id/event_location_map_view"
+                android:layout_marginTop="16dp"
+                android:text="@string/event_description"
+                android:textColor="@color/colorTextDark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/event_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/event_des"
+                android:layout_below="@+id/event_des"
+                android:layout_marginTop="13dp"
+                android:ems="10"
+                android:hint="@string/event_description_box"
+                android:inputType="textPersonName"
+                android:layout_toStartOf="@+id/filter_button"
+                android:layout_alignEnd="@+id/event_location_map_view"
+                android:layout_marginBottom="50dp"/>
+
+            <EditText
+                android:id="@+id/event_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/event_n"
+                android:layout_alignBottom="@+id/event_n"
+                android:layout_marginStart="18dp"
+                android:layout_toEndOf="@+id/event_n"
+                android:ems="10"
+                android:hint="@string/event_name_box"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/create_event_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/event_des"
+                android:layout_marginEnd="13dp"
+                android:text="@string/event_button" />
+
+            <EditText
+                android:id="@+id/editEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/event_isPrivate"
+                android:layout_alignStart="@+id/event_et"
+                android:layout_below="@+id/event_ed"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:hint="@string/dateEvent"
+                android:inputType="none"
+                android:textAlignment="viewStart" />
+
+            <EditText
+                android:id="@+id/editStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/event_st"
+                android:layout_below="@+id/event_sd"
+                android:layout_toStartOf="@+id/editAddress"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:hint="@string/dateEvent"
+                android:inputType="none"
+                android:textAlignment="viewStart" />
+
+            <EditText
+                android:id="@+id/editStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/event_st"
+                android:layout_alignStart="@+id/event_st"
+                android:layout_below="@+id/event_st"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:hint="@string/timeEvent"
+                android:inputType="none"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/event_addr"
+                android:layout_alignBottom="@+id/filter_button"
+                android:layout_below="@+id/filter"
+                android:layout_alignEnd="@+id/create_event_confirm"
+                android:ems="10"
+                android:hint="@string/addressEvent"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editStartTime"
+                android:layout_alignEnd="@+id/event_et"
+                android:layout_alignStart="@+id/event_et"
+                android:layout_below="@+id/event_et"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:hint="@string/timeEvent"
+                android:inputType="none"
+                android:textAlignment="center" />
+
+            <com.example.matt.RightFit.custom.view.ScrollInterceptingMapView
+                android:id="@+id/event_location_map_view"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_alignStart="@+id/filter"
+                android:layout_below="@+id/event_loc"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="14dp" />
+
+            <ImageView
+                android:id="@+id/event_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="invisible"
+                android:layout_above="@+id/event_name"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <!-- android:onClick="createEvent" -->
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

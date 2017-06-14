@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:enabled="true"
+        android:title="Search"
+        android:icon="@drawable/magnifier"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/message"
+        android:enabled="true"
+        android:title="message"
+        android:icon="@drawable/message_closed_envelope"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/current_city"
+        android:actionViewClass="android.widget.TextView"
+        android:enabled="true"
+        android:title="Current City"
+        android:icon="@drawable/cityscape"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/favorite"
+        android:enabled="true"
+        android:icon="@drawable/refresh_button"
+        android:title="@string/refresh"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/refresh"
+        android:enabled="true"
+        android:icon="@drawable/more"
+        android:title="Options"
+        app:showAsAction="ifRoom" />
+</menu>
