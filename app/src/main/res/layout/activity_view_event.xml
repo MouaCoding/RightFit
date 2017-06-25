@@ -8,7 +8,7 @@
     android:focusableInTouchMode="true"
     android:background="@drawable/top_nav_color"
     android:orientation="vertical"
-    tools:context="com.example.matt.RightFit.ViewEventActivity">
+    tools:context="com.example.matt.rightfit.ViewEventActivity">
 
     <ImageButton
         android:id="@+id/back_button"

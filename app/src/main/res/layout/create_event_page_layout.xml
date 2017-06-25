@@ -292,7 +292,7 @@
                 android:inputType="none"
                 android:textAlignment="center" />
 
-            <com.example.matt.RightFit.custom.view.ScrollInterceptingMapView
+            <com.example.matt.rightfit.custom.view.ScrollInterceptingMapView
                 android:id="@+id/event_location_map_view"
                 android:layout_width="match_parent"
                 android:layout_height="240dp"

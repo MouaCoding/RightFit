@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.matt.RightFit">
+    package="com.example.matt.rightfit">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -18,18 +18,22 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- Write Files -->
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera2.full" />
 
     <application
-        android:name="com.example.matt.RightFit.App"
+        android:name="com.example.matt.rightfit.App"
         android:allowBackup="true"
         android:icon="@drawable/rightfitlogo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        >
         <activity
-            android:name="com.example.matt.RightFit.MainActivity"
-            android:windowSoftInputMode="adjustPan" />
+            android:name="com.example.matt.rightfit.MainActivity"
+            android:windowSoftInputMode="adjustPan"/>
+            <!--android:theme="@style/FullScreenTheme"/>-->
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -40,6 +44,9 @@
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
         <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face"/>
+        <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
         <meta-data
@@ -47,7 +54,7 @@
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name="com.example.matt.RightFit.LoginActivity"
+            android:name="com.example.matt.rightfit.LoginActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,13 +62,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.matt.RightFit.RegisterActivity" />
-        <activity android:name="com.example.matt.RightFit.ChatActivity" />
-        <activity android:name="com.example.matt.RightFit.MessageListActivity" />
-        <activity android:name="com.example.matt.RightFit.NewMessageActivity" />
-        <activity android:name="com.example.matt.RightFit.AboutMeActivity" />
-        <activity android:name="com.example.matt.RightFit.ViewUserActivity" />
-        <activity android:name="com.example.matt.RightFit.WallActivity" />
+        <activity android:name="com.example.matt.rightfit.RegisterActivity" />
+        <activity android:name="com.example.matt.rightfit.ChatActivity" />
+        <activity android:name="com.example.matt.rightfit.MessageListActivity" />
+        <activity android:name="com.example.matt.rightfit.NewMessageActivity" />
+        <activity android:name="com.example.matt.rightfit.AboutMeActivity" />
+        <activity android:name="com.example.matt.rightfit.ViewUserActivity" />
+        <activity android:name="com.example.matt.rightfit.WallActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -77,23 +84,23 @@
             android:name="io.fabric.ApiKey"
             android:value="134cf1747263e127c412def9f67626d8c3389c82" />
 
-        <activity android:name="com.example.matt.RightFit.ForgotPasswordActivity" />
-        <activity android:name="com.example.matt.RightFit.AlmostDoneActivity" />
-        <activity android:name="com.example.matt.RightFit.ViewPostActivity" />
-        <activity android:name="com.example.matt.RightFit.CityEventsActivity" />
-        <activity android:name="com.example.matt.RightFit.ViewEventActivity" />
-        <activity android:name="com.example.matt.RightFit.CommentsListActivity" />
+        <activity android:name="com.example.matt.rightfit.ForgotPasswordActivity" />
+        <activity android:name="com.example.matt.rightfit.AlmostDoneActivity" />
+        <activity android:name="com.example.matt.rightfit.ViewPostActivity" />
+        <activity android:name="com.example.matt.rightfit.CityEventsActivity" />
+        <activity android:name="com.example.matt.rightfit.ViewEventActivity" />
+        <activity android:name="com.example.matt.rightfit.CommentsListActivity" />
 
 
         <service
-            android:name="com.example.matt.RightFit.notifications.RHRNMessagingService"
+            android:name="com.example.matt.rightfit.notifications.RHRNMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
         <service
-            android:name="com.example.matt.RightFit.notifications.RHRNInstanceIDService"
+            android:name="com.example.matt.rightfit.notifications.RHRNInstanceIDService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
@@ -101,15 +108,15 @@
         </service>
 
         <activity
-            android:name="com.example.matt.RightFit.FilterCityActivity"
+            android:name="com.example.matt.rightfit.FilterCityActivity"
             android:label="@string/title_activity_filter_city"
             android:theme="@style/AppTheme" />
-        <activity android:name="com.example.matt.RightFit.MorePostsActivity" />
-        <activity android:name="com.example.matt.RightFit.MoreEventsActivity" />
-        <activity android:name="com.example.matt.RightFit.MoreSharedPostsActivity"/>
-        <activity android:name="com.example.matt.RightFit.MoreSharedEventsActivity"/>
-        <activity android:name="com.example.matt.RightFit.FollowingListActivity" />
-        <activity android:name="com.example.matt.RightFit.FollowerListActivity"></activity>
+        <activity android:name="com.example.matt.rightfit.MorePostsActivity" />
+        <activity android:name="com.example.matt.rightfit.MoreEventsActivity" />
+        <activity android:name="com.example.matt.rightfit.MoreSharedPostsActivity"/>
+        <activity android:name="com.example.matt.rightfit.MoreSharedEventsActivity"/>
+        <activity android:name="com.example.matt.rightfit.FollowingListActivity" />
+        <activity android:name="com.example.matt.rightfit.FollowerListActivity"></activity>
     </application>
 
 </manifest>

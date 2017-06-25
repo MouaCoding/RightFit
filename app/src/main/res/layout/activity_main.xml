@@ -6,24 +6,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.matt.RightFit.MainActivity">
+    tools:context="com.example.matt.rightfit.MainActivity">
 
-    <com.example.matt.RightFit.custom.view.NonScrollingViewPager
+    <com.example.matt.rightfit.custom.view.NonScrollingViewPager
         android:id="@+id/main_content_view_pager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
-    </com.example.matt.RightFit.custom.view.NonScrollingViewPager>
+    </com.example.matt.rightfit.custom.view.NonScrollingViewPager>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/main_bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:itemBackground="@drawable/navigation_bar_color"
+        app:itemBackground="@color/tw__transparent"
         app:itemIconTint="@color/colorAccent"
         app:itemTextColor="@color/colorAccent"
         app:menu="@menu/bottom_navigation_main" />
+    <!--app:itemBackground="@drawable/navigation_bar_color"-->
 
 </LinearLayout>

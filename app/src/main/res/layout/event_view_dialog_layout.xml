@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.matt.RightFit.custom.view.UserEventView
+    <com.example.matt.rightfit.custom.view.UserEventView
         android:id="@+id/user_event"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

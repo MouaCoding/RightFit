@@ -6,7 +6,7 @@
     android:background="@android:color/background_light"
     android:layout_gravity="center">
 
-    <com.example.matt.RightFit.custom.view.UserMiniHeaderView
+    <com.example.matt.rightfit.custom.view.UserMiniHeaderView
         android:id="@+id/user_event_mini_head"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

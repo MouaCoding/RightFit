@@ -66,7 +66,7 @@
         android:hint="@string/post_content_text"
         android:inputType="textPersonName" />
 
-    <com.example.matt.RightFit.custom.view.ScrollInterceptingMapView
+    <com.example.matt.rightfit.custom.view.ScrollInterceptingMapView
         android:id="@+id/post_location_map_view"
         android:layout_width="match_parent"
         android:layout_height="240dp"

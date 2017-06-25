@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.matt.RightFit.custom.view.UserPostView
+    <com.example.matt.rightfit.custom.view.UserPostView
         android:id="@+id/user_post"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
